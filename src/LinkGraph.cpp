@@ -1,4 +1,5 @@
 #include "LinkGraph.h"
+#include <cstring>
 
 LinkGraph::LinkGraph()
 	:vertices_(NULL), num_edges_(0), num_vertices_(0), markSet_(NULL), pointSet_(NULL)

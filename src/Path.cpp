@@ -1,6 +1,6 @@
 #include "Path.h"
 #include <sstream>
-
+#include <cstring>
 
 Path::Path()
 	:length_(0), max_length_(4)

@@ -3,7 +3,12 @@ cmake_minimum_required(VERSION 3.5)
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
-
+if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+    set(CMAKE_TOOLCHAIN_FILE "C:/msys64/mingw64/bin/vcpkg/scripts/buildsystems/vcpkg.cmake")
+endif()
+if (NOT DEFINED VCPKG_TARGET_TRIPLET)
+    set(VCPKG_TARGET_TRIPLET "x64-mingw-dynamic")
+endif()
 project(visualized-routing)
 
 find_package(glad REQUIRED)
